@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة Albedo - المنتجات</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" href="iekon/albedo_logo_modern_type.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Albedo</div>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>              
+                <img src="iekon/albedo_logo_modern_type.png" class="logo">
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 style="color: aliceblue;">Albedo يرحب بكم في موقع الويب الاخاص بلشركه</h1 >
+            <p style="color: aliceblue;">اكتشف أفضل منتجاتنا بأسعار تنافسية</p> 
+              <P style="color: aliceblue;">اقوا خصومات بمناسبة افتتاح الشركه🤯</P>
+        
+        
+        </section>
+
+        <section 
+        class="products">
+            <div class="product-card">
+                <img src="img/3.jpeg" alt="منتج 1">
+                <h3>منتج 1</h3>
+                <p class="price">100 ج.م</p>
+                <button onclick="openOrderForm('منتج 1', 100)">شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="img/4.jpeg" alt="منتج 2">
+                <h3>منتج 2</h3>
+                <p class="price">250 ج.م</p>
+                <button onclick="openOrderForm('منتج 2', 250)">شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="img/11.jpg" alt="منتج 3">
+                <h3>منتج 3</h3>
+                <p class="price">500 ج.م</p>
+                <button onclick="openOrderForm('منتج 3', 500)">شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="img/14.jpg" alt="منتج 4">
+                <h3>منتج 4</h3>
+                <p class="price">750 ج.م</p>
+                <button onclick="openOrderForm('منتج 4', 750)">شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="img/7.jpg" alt="منتج 5">
+                <h3>منتج 5</h3>
+                <p class="price">1000 ج.م</p>
+                <button onclick="openOrderForm('منتج 5', 1000)">شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="img/8.jpg" alt="منتج 6">
+                <h3>منتج 6</h3>
+                <p class="price">1250 ج.م</p>
+                <button onclick="openOrderForm('منتج 6', 1250)">شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="img/9.jpg" alt="منتج 7">
+                <h3>منتج 7</h3>
+                <p class="price">1500 ج.م</p>
+                <button onclick="openOrderForm('منتج 7', 1500)">شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="img/10.jpg" alt="منتج 8">
+                <h3>منتج 8</h3>
+                <p class="price">1750 ج.م</p>
+                <button onclick="openOrderForm('منتج 8', 1750)">شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="img/15.jpg" alt="منتج 9 ">
+                <h3>منتج 9</h3>
+                <p class="price">2000 ج.م</p>
+                <button onclick="openOrderForm('منتج 9', 2000)">شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="img/1.jpg" alt="منتج 10">
+                <h3>منتج 10</h3>
+                <p class="price">2250 ج.م</p>
+                <button onclick="openOrderForm('منتج 10', 2250)">شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="img/13.jpg" alt="منتج 11">
+                <h3>منتج 11</h3>
+                <p class="price">2500 ج.م</p>
+                <button onclick="openOrderForm('منتج 11', 2500)">شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="img/5.jpeg" alt="منتج 12">
+                <h3>منتج 12</h3>
+                <p class="price">2750 ج.م</p>
+                <button onclick="openOrderForm('منتج 12', 2750)">شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="img/2.jpg" alt="منتج 13">
+                <h3>منتج 13</h3>
+                <p class="price">3000 ج.م</p>
+                <button onclick="openOrderForm('منتج 13', 3000)">شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="img/12.jpg" alt="منتج 14">
+                <h3>منتج 14</h3>
+                <p class="price">3200 ج.م</p>
+                <button onclick="openOrderForm('منتج 14', 3200)">شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="img/6.jpeg" alt="منتج 15">
+                <h3>منتج 15</h3>
+                <p class="price">3500 ج.م</p>
+                <button onclick="openOrderForm('منتج 15', 3500)">شراء الآن</button>
+            </div>
+            </div>
+        </section>
+
+        <!-- نموذج الطلب (Modal) -->
+        <div id="orderModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeOrderForm()">&times;</span>
+                <h2>طلب شراء</h2>
+                <form id="purchaseForm">
+                    <input type="hidden" id="productName">
+                    <input type="hidden" id="productPrice">
+                    <div class="form-group">
+                        <label for="customerName">اسم العميل:</label>
+                        <input type="text" id="customerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerPhone">رقم الهاتف:</label>
+                        <input type="tel" id="customerPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerAddress">العنوان:</label>
+                        <textarea id="customerAddress" required></textarea>
+                    </div>
+                    <button type="submit">تأكيد الطلب</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 شركة Albedo. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

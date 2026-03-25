@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة Albedo- لوحة تحكم الموظفين</title>
+    <link rel="stylesheet" href="style.css">
+       <link rel="website icon" href="iekon/albedo_logo_modern_type.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Albedo - لوحة الموظفين</div>
+            <ul>
+                <li><a href="index.html">العودة للموقع</a></li>
+                <li><img src="iekon/albedo_logo_modern_type.png" class="logo"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="admin-container">
+        <!-- قسم تسجيل الدخول -->
+        <section id="loginSection" class="login-form">
+            <h2 >تسجيل دخول الموظفين</h2>
+            <div class="form-group">
+                <label for="username">اسم المستخدم:</label>
+                <input type="text" id="username" placeholder="admin">
+            </div>
+            <div class="form-group">
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" placeholder="123456">
+            </div>
+            <button onclick="login()" style="color: black;">دخول</button>
+        </section>
+
+        <!-- قسم عرض الطلبات (يظهر بعد تسجيل الدخول) -->
+        <section id="adminSection" style="display: none;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h2>قائمة طلبات الشراء 
+                    <br>welcime Ziad ceo
+                </h2>
+
+                <button onclick="logout()" style="background-color: #2688e4;">تسجيل خروج</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>المنتج</th>
+                        <th>السعر</th>
+                        <th>اسم العميل</th>
+                        <th>رقم الهاتف</th>
+                        <th>العنوان</th>
+                        <th>التاريخ والوقت</th>
+                        <th>إلغاء</th>
+                    </tr>
+                </thead>
+                <tbody id="ordersTable">
+                    <!-- سيتم تحميل الطلبات هنا عبر JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
